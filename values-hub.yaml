@@ -10,7 +10,6 @@ clusterGroup:
   - nvidia-gpu-operator
   - openshift-serverless
   - knative-serving
-  - config-demo
   - hello-world
   - plumbing
   - minio
@@ -89,11 +88,6 @@ clusterGroup:
       project: hub
       chart: golang-external-secrets
       chartVersion: 0.1.*
-    config-demo:
-      name: config-demo
-      namespace: config-demo
-      project: config-demo
-      path: charts/all/config-demo
     hello-world:
       name: hello-world
       namespace: hello-world
